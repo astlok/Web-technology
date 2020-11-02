@@ -26,17 +26,11 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="card p-3">
-                    <div class="d-flex align-items-center">
-                        <img class="profile-img" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80">
-                        <div class="ml-3 w-100">
-                            <h4 class="">Oleg Reutskiy</h4>
-                            <div class="button mt-2 d-flex flex-row align-items-center">
-                                <button class="btn btn-sm btn-outline-secondary w-100">Settings</button>
-                                <button class="btn btn-sm btn-outline-danger w-100 ml-2">Log out</button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="mt-2">
+                    <p><a class="logreg" href="#">Log in</a></p>
+                </div>
+                <div class="ml-4 mt-2">
+                    <p><a class="logreg" href="#">Register</a></p>
                 </div>
             </nav>
         </header>
@@ -47,35 +41,43 @@
                     <div class="col-8">
                         <div class="row question-header">
                             <div class="col-4 hot-q-block">
-                                <h3>New Question</h3>
+                                <h3>Log in</h3>
                             </div>
                         </div>
-                        <form class="question-form">
-                            <div class="form-group row">
-                                <label class="col-sm-1 col-form-label">Title</label>
-                                <div class="col-sm-11">
-                                    <input class="form-control" placeholder="How to build a moon park?" required>
+                        <form class="mt-2">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label class="mt-1">Login</label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input class="form-control">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label for="validationTextarea" class="col-sm-1 col-form-label">Text</label>
-                                <div class="col-sm-11">
-                                    <textarea class="form-control" id="validationTextarea" placeholder="Really, how? Have no idea about it" required></textarea>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <label class="mt-1" for="exampleInputPassword1">Password</label>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                    </div>
                                 </div>
                             </div>
-                            <div class="form-group row">
-                                <label class="col-sm-1 col-form-label">Tags</label>
-                                <div class="col-sm-11">
-                                    <input class="form-control" placeholder="moon, park, puzzle">
-                                </div>
-                            </div> 
-                            <div class="form-group row">
-                                <label class="col-sm-1 col-form-label"></label>
-                                <div class="col-sm-11">
-                                    <button type="submit" class="btn btn-outline-dark">Ask</button>
+                            <div class="row">
+                                <div class="col-2"></div>
+                                <div class="col-5">
+                                    <button type="submit" class="btn btn-primary">Log in!</button>
                                 </div>
                             </div>
                         </form>
+                        <div class="row mt-4">
+                                <div class="col-2"></div>
+                                <div class="col-5">
+                                    <p><a href="#">Create new account</a></p>
+                                </div>
+                            </div>
                     </div>
                     <div class="col-3 tags ml-5">
                         <div>

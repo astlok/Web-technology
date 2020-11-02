@@ -121,3 +121,7 @@ code {
 .line {
 	margin-bottom: 50px;
 }
+
+.logreg {
+	color: white !important;
+}
