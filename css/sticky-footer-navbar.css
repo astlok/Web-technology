@@ -1,0 +1,110 @@
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+main > .container {
+  padding: 60px 15px 0;
+}
+
+.footer {
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.question-box {
+	margin-top: 10px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.question-img {
+	max-width: 120px;
+    max-height: 120px;
+    float: right;
+    padding-left: 19px;
+    margin-top: 9px;
+}
+
+.question-title {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.center {
+	margin: auto;
+}
+.card {
+    width: 270px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff
+}
+
+.profile-img {
+	max-width: 50px;
+    max-height: 50px;
+}
+
+.ask-btn {
+	margin-right: 50px ;
+}
+
+.logo {
+	font-size: 40pt;
+}
+
+.tags {
+	margin-top: 65px;
+    padding: 20px;
+}
+
+.underlined {
+	text-decoration: underline;
+}
+
+.form-width {
+	width: 500px !important;
+}
+
+.question-header {
+	margin-top: 80px;
+}
+
+.hot-question {
+	text-decoration: underline;
+}
+
+.hot-q-block {
+	position: relative;
+}
+
+.hot-q-block h6{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    padding: 0px;    
+}
+
+.marg {
+    margin-left: 34px;
+    margin-top: 106px;
+    padding-bottom: 3px;
+}
+
+.btn-pos {
+	margin-left: 13px;
+}
+
+.page-navi {
+	margin-top: 15px;
+}
