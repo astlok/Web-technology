@@ -125,3 +125,9 @@ code {
 .logreg {
 	color: white !important;
 }
+
+.settings-img {
+	max-width: 150px;
+    max-height: 150px;
+    margin-bottom: 20px;
+}
