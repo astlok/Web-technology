@@ -1,0 +1,44 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block head %}
+    {% include 'inc/navbar_profile.html' %}
+{% endblock head %}
+
+{% block content %}
+    <div class="row question-header">
+        <div class="col-4 hot-q-block">
+            <h3>New Question</h3>
+        </div>
+    </div>
+    <form class="question-form">
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Title</label>
+            <div class="col-sm-11">
+                <input class="form-control" placeholder="How to build a moon park?" required>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="validationTextarea" class="col-sm-1 col-form-label">Text</label>
+            <div class="col-sm-11">
+                <textarea class="form-control" id="validationTextarea" placeholder="Really, how? Have no idea about it" required></textarea>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label">Tags</label>
+            <div class="col-sm-11">
+                <input class="form-control" placeholder="moon, park, puzzle">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-1 col-form-label"></label>
+            <div class="col-sm-11">
+                <button type="submit" class="btn btn-outline-dark">Ask</button>
+            </div>
+        </div>
+    </form>
+{% endblock content %}
+
+{% block right %}
+    {% include 'inc/tags_and_best_memb.html' %}
+{% endblock right %}

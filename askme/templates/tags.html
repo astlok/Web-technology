@@ -1,0 +1,28 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block head %}
+    {% include 'inc/navbar_profile.html' %}
+{% endblock head %}
+
+{% block content %}
+    <div class="row question-header">
+        <div class="col-1 hot-q-block">
+            <h3>Tag:</h3>
+        </div>
+        <div class="col-11 hot-q-block">
+            <h3>{% for tag in tags %} {{tag}} {% endfor %}</h3>
+        </div>
+    </div>
+    {% for page_object in page_objects %}
+        {% include 'inc/one_question_main_page.html' %}
+    {% endfor %}
+{% endblock content %}
+
+{% block right %}
+    {% include 'inc/tags_and_best_memb.html' %}
+{% endblock right %}
+
+{% block paginator %}
+    {% include 'inc/paginator.html' %}
+{% endblock paginator %}

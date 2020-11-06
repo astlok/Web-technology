@@ -1,0 +1,17 @@
+{% extends 'inc/one_question_base.html' %}
+{% block question %}
+	<div class="question-title">
+		<a href="{% url 'question' page_object.id %}">{{page_object.title}}</a>
+	</div>
+	<div class="question-text">
+		{{page_object.text}}
+	</div>
+{% endblock question%}
+{% block under_question %}
+	<div class="col-5">
+		<a href="{% url 'question' page_object.id %}#answers">Answers {{page_object.answers_count}}</a>
+	</div>
+	<div class="col-7">
+		<p>Tags: <a href="{% url 'tags' page_object.tag %}">{{page_object.tag}}</a></p>
+	</div>
+{% endblock under_question %}

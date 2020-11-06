@@ -1,0 +1,14 @@
+{% extends 'inc/one_question_base.html' %}
+{% block question %}
+	<div class="question-title">
+		{{question.title}}
+	</div>
+	<div class="question-text">
+		{{question.text}}
+	</div>
+{% endblock question%}
+{% block under_question %}
+	<div class="col-7">
+		<p>Tags: <a href="{% url 'tags' question.tag %}">{{question.tag}}</a></p>
+	</div>
+{% endblock under_question %}

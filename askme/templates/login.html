@@ -1,0 +1,53 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block head %}
+    {% include 'inc/navbar_not_log.html' %}
+{% endblock head %}
+
+{% block content %}
+    <div class="row question-header">
+        <div class="col-4 hot-q-block">
+            <h3>Log in</h3>
+            <p class="form_mist">Sorry, wrong password!</p>
+        </div>
+    </div>
+    <form class="mt-2">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2">
+                    <label class="mt-1">Login</label>
+                </div>
+                <div class="col-5">
+                    <input class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-2">
+                    <label class="mt-1" for="exampleInputPassword1">Password</label>
+                </div>
+                <div class="col-5">
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-5">
+                <button type="submit" class="btn btn-primary">Log in!</button>
+            </div>
+        </div>
+    </form>
+    <div class="row mt-4">
+        <div class="col-2"></div>
+        <div class="col-5">
+            <p><a href="{% url 'register' %}">Create new account</a></p>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block right %}
+   {% include 'inc/tags_and_best_memb.html' %} 
+{% endblock right %}

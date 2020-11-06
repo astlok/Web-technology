@@ -1,0 +1,9 @@
+{% extends 'inc/navbar_base.html' %}
+{% block log_block %}
+    <div class="mt-2">
+        <p><a class="logreg" href="{% url 'login' %}">Log in</a></p>
+    </div>
+    <div class="ml-4 mt-2 mr-5">
+        <p><a class="logreg" href="{% url 'register' %}">Register</a></p>
+    </div>
+{% endblock log_block %}

@@ -1,0 +1,32 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block head %}
+    {% include 'inc/navbar_profile.html' %}
+{% endblock head %}
+
+{% block content %}
+	<div class="question-header">
+	</div>
+	{% include 'inc/one_question_question_page.html' %}
+	<p><a name="answers"></a></p>
+	<hr color="black" >
+	{% for page_object in page_objects %}
+		{% include 'inc/answer.html' %}
+	{% endfor %}
+	<hr color="black" >
+	<form>
+		<div class="form-group row">
+			<textarea class="form-control" id="validationTextarea" placeholder="Enter your answer hear" required></textarea>
+			<button type="submit" class="mb-3 mt-3 btn btn-outline-dark">Answer</button>
+		</div>
+	</form>
+{% endblock content %}
+
+{% block right %}
+	{% include 'inc/tags_and_best_memb.html' %}
+{% endblock right %}
+
+{% block paginator %}
+	{% include 'inc/paginator.html' %}
+{% endblock paginator %}

@@ -1,0 +1,67 @@
+{% extends 'inc/base.html' %}
+{% load static %}
+
+{% block head %}
+    {% include 'inc/navbar_profile.html' %}
+{% endblock head %}
+
+{% block content %}
+    <div class="row question-header">
+        <div class="col-12 hot-q-block">
+            <h3>Settings: Oleg Reutskiy</h3>
+        </div>
+    </div>
+    <form class="mt-4">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label class="mt-1">Login</label>
+                </div>
+                <div class="col-5">
+                    <input value="astlok" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label for="exampleInputEmail1">Email address</label>
+                </div>
+                <div class="col-5">
+                    <input value="astlok@mail.ru" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label class="mt-1">Nick name</label>
+                </div>
+                <div class="col-5">
+                    <input value="astlok" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-3">
+                    <label for="exampleFormControlFile1">Upload avatar</label>
+                </div>
+                <div class="col-5">
+                    <img class="settings-img rounded" src="{% static "img/image.jpg" %}">
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-5">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+{% endblock content %}
+
+{% block right %}
+    {% include 'inc/tags_and_best_memb.html' %}
+{% endblock right %}
