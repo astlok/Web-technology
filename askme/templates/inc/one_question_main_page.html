@@ -9,9 +9,13 @@
 {% endblock question%}
 {% block under_question %}
 	<div class="col-5">
-		<a href="{% url 'question' page_object.id %}#answers">Answers {{page_object.answers_count}}</a>
+		<a href="{% url 'question' page_object.id %}#answers">Answers {{page_object.answer_set.count}}</a>
 	</div>
 	<div class="col-7">
-		<p>Tags: <a href="{% url 'tags' page_object.tag %}">{{page_object.tag}}</a></p>
+		<p>Tags: 
+			{% for tag in page_object.tags.all %}
+				<a href="{% url 'tags' tag%}">{{tag}}</a>
+			{% endfor %}
+		</p>
 	</div>
 {% endblock under_question %}

@@ -9,6 +9,10 @@
 {% endblock question%}
 {% block under_question %}
 	<div class="col-7">
-		<p>Tags: <a href="{% url 'tags' question.tag %}">{{question.tag}}</a></p>
+		<p>Tags: 
+			{% for tag in tags%}
+				<a href="{% url 'tags' tag %}">{{tag}}</a>
+			{% endfor %}
+		</p>
 	</div>
 {% endblock under_question %}
